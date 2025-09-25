@@ -8,11 +8,12 @@ import Login from "./Pages/login";
 import Sidebar from "./Component/Sidebar";
 import AddRole from "./Pages/AddRole";
 import AddStaff from "./Pages/AddStaff";
-import AddQuestion from "./Pages/Addquestion";
+
 import AddSubject from "./Pages/AddSubject";
 import AddTopic from "./Pages/AddTopic";
 import ProtectedRoute from "./Component/ProtectedRoute";
 import { useIdleLogout } from "./hooks/useIdleLogout";
+import AddQuestion from "./Pages/AddQuestion";
 
 function Layout() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -37,7 +38,7 @@ function Layout() {
             <Route path="*" element={<ProtectedRoute><Home /></ProtectedRoute>} />
             <Route path="/add_role" element={<ProtectedRoute><AddRole /></ProtectedRoute>} />
             <Route path="/add_staff" element={<ProtectedRoute><AddStaff /></ProtectedRoute>} />
-            <Route path="/add_question" element={<ProtectedRoute><AddQuestion /></ProtectedRoute>} />
+            <Route path="/add_question" element={<ProtectedRoute><AddQuestion/> </ProtectedRoute>} />
             <Route path="/add_subject" element={<ProtectedRoute><AddSubject /></ProtectedRoute>} />
             <Route path="/add_topic" element={<ProtectedRoute><AddTopic /></ProtectedRoute>} />
           </Routes>
