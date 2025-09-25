@@ -24,7 +24,7 @@ const AddSubject = () => {
     <div className="container mt-5" style={{ maxWidth: "600px" }}>
       <div className="card shadow border-0">
         <div className="card-body">
-          <h4 className="mb-3">Add Subject</h4>
+          <h4 className="mb-3">Add Subject </h4>
 
           {message && <div className="alert alert-success">{message}</div>}
           {error && <div className="alert alert-danger">{error}</div>}

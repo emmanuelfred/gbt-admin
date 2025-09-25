@@ -8,7 +8,7 @@ const AddTopic = () => {
   const [subjectId, setSubjectId] = useState("");
   const [topicName, setTopicName] = useState("");
 
-  const { getSubject, examData, addTopic, error, loading,  message } =
+  const { getSubject,examData, addTopic, error, loading,  message } =
     useCbtStore();
 
   // Fetch levels and subjects
