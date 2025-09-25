@@ -38,7 +38,7 @@ function Layout() {
             <Route path="*" element={<ProtectedRoute><Home /></ProtectedRoute>} />
             <Route path="/add_role" element={<ProtectedRoute><AddRole /></ProtectedRoute>} />
             <Route path="/add_staff" element={<ProtectedRoute><AddStaff /></ProtectedRoute>} />
-            <Route path="/add_question" element={<ProtectedRoute><AddQuestion/> </ProtectedRoute>} />
+            <Route path="/add_question" element={<ProtectedRoute><AddQuestion /> </ProtectedRoute>} />
             <Route path="/add_subject" element={<ProtectedRoute><AddSubject /></ProtectedRoute>} />
             <Route path="/add_topic" element={<ProtectedRoute><AddTopic /></ProtectedRoute>} />
           </Routes>
